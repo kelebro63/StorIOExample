@@ -10,8 +10,8 @@ import me.bitfrom.storioexample.database.tables.QuotesTable;
 
 public class DbOpenHelper extends SQLiteOpenHelper {
 
-    public DbOpenHelper(Context context, String name, SQLiteDatabase.CursorFactory factory, int version) {
-        super(context, ConstantsManager.DB_NAME, factory, ConstantsManager.DB_VERSION);
+    public DbOpenHelper(Context context) {
+        super(context, ConstantsManager.DB_NAME, null, ConstantsManager.DB_VERSION);
     }
 
     @Override
